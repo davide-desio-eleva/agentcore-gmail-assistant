@@ -1,0 +1,9 @@
+# The direct dependencies. requirements.txt is compiled from this file, with every package pinned and hashed:
+#   uv pip compile requirements.in --generate-hashes --python-version 3.13 --python-platform aarch64-manylinux_2_28 -o requirements.txt
+# The image installs it with --require-hashes, so a package that changed upstream does not get in.
+strands-agents==1.62.0
+bedrock-agentcore==1.25.1
+google-api-python-client==2.201.0
+google-auth==2.62.0
+# A transitive dependency of strands-agents, held at the first release without the known mcp CVEs (pip-audit).
+mcp>=1.30.0,<2

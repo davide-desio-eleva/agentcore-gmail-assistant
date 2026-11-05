@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Node / CDK
+infra/node_modules/
+infra/cdk.out/
+infra/*.js
+infra/bin/*.js
+infra/lib/*.js
+infra/*.d.ts
+
+# Local secrets (never commit OAuth client files or tokens)
+client_secret*.json
+*.env
